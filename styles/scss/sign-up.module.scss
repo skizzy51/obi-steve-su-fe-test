@@ -1,0 +1,133 @@
+@import './mixins';
+@import './variables';
+
+.container{
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+
+    .graphicSide{
+        width: 50vw;
+        background-image: url(/images/register-and-email-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .signUpCont{
+        width: 50vw;
+        position: relative;
+        @include justify-content(center);
+    }
+    .bgLogo{
+        opacity: 10%;
+        height: 35vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .signUp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        & h2{
+            font-size: 33px;
+            font-weight: 500;
+        }
+        & h6{
+            font-size: 16px;
+            color: #8A92A6;
+            margin-top: 16px;
+            font-weight: 400;
+        }
+        .inputs{
+            margin-top: 16px;
+            @include justify-content(center);
+            
+
+            .inputCont{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                margin: 0 8px;
+    
+                & input{
+                    height: 33px;
+                    border-radius: 4px;
+                    border: 1px solid #3A57E8;
+                    margin-top: 8px;
+                    padding-left: 10px;
+                }
+                & label{
+                    color: #8A92A6;
+                }
+            }
+        }
+        .TOS{
+            @include alignCenterWithoutJustifyContent;
+            color: #8A92A6;
+            margin-top: 16px;
+
+            & label{
+                margin-left: 8px;
+            }
+        }
+        .btn{
+            cursor: pointer;
+            background-color: #3A57E8;
+            margin-top: 24px;
+            border: none;
+            font-size: 16px;
+            color: white;
+            width: 188px;
+            height: 44px;
+        }
+        .or{
+            margin-top: 16px;
+        }
+        .socials{
+            margin: 16px 0;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .container{
+        .signUp{
+            .inputs{
+                .inputCont{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container{
+        .graphicSide{
+            width: 25vw;
+        }
+        .signUpCont{
+            width: 75vw;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .container{
+        .graphicSide{
+            width: 0;
+        }
+        .signUpCont{
+            width: 100vw;
+        }
+        .signUp{
+            .inputs{
+                .inputCont{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

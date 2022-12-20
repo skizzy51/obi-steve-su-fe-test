@@ -1,0 +1,94 @@
+.container {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+}
+.container .graphicSide {
+  width: 50vw;
+  background-image: url(/images/login-and-confirm-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .confirmCont {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .bgLogo {
+  opacity: 10%;
+  height: 35vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .confirm h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.container .confirm p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8A92A6;
+  margin-top: 16px;
+  max-width: 466px;
+}
+.container .confirm .inputCont {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 476px;
+}
+.container .confirm .inputCont input {
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #3A57E8;
+  margin-top: 8px;
+  padding-left: 10px;
+}
+.container .confirm .inputCont label {
+  color: #8A92A6;
+}
+.container .confirm .btn {
+  cursor: pointer;
+  background-color: #3A57E8;
+  margin-top: 40px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  width: 188px;
+  height: 44px;
+}
+
+@media (max-width: 1000px) {
+  .container .graphicSide {
+    width: 30vw;
+  }
+  .container .confirmCont {
+    width: 70vw;
+  }
+}
+@media (max-width: 720px) {
+  .container .confirm p {
+    max-width: 90%;
+  }
+  .container .confirm .inputCont {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .container .graphicSide {
+    width: 0;
+  }
+  .container .confirmCont {
+    width: 100vw;
+  }
+}/*# sourceMappingURL=confirm.module.css.map */

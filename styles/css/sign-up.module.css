@@ -1,0 +1,113 @@
+.container {
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+}
+.container .graphicSide {
+  width: 50vw;
+  background-image: url(/images/register-and-email-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .signUpCont {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .bgLogo {
+  opacity: 10%;
+  height: 35vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container .signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container .signUp h2 {
+  font-size: 33px;
+  font-weight: 500;
+}
+.container .signUp h6 {
+  font-size: 16px;
+  color: #8A92A6;
+  margin-top: 16px;
+  font-weight: 400;
+}
+.container .signUp .inputs {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .signUp .inputs .inputCont {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 0 8px;
+}
+.container .signUp .inputs .inputCont input {
+  height: 33px;
+  border-radius: 4px;
+  border: 1px solid #3A57E8;
+  margin-top: 8px;
+  padding-left: 10px;
+}
+.container .signUp .inputs .inputCont label {
+  color: #8A92A6;
+}
+.container .signUp .TOS {
+  display: flex;
+  align-items: center;
+  color: #8A92A6;
+  margin-top: 16px;
+}
+.container .signUp .TOS label {
+  margin-left: 8px;
+}
+.container .signUp .btn {
+  cursor: pointer;
+  background-color: #3A57E8;
+  margin-top: 24px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  width: 188px;
+  height: 44px;
+}
+.container .signUp .or {
+  margin-top: 16px;
+}
+.container .signUp .socials {
+  margin: 16px 0;
+}
+
+@media (max-width: 950px) {
+  .container .signUp .inputs .inputCont {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .container .graphicSide {
+    width: 25vw;
+  }
+  .container .signUpCont {
+    width: 75vw;
+  }
+}
+@media (max-width: 426px) {
+  .container .graphicSide {
+    width: 0;
+  }
+  .container .signUpCont {
+    width: 100vw;
+  }
+  .container .signUp .inputs .inputCont {
+    width: 40%;
+  }
+}/*# sourceMappingURL=sign-up.module.css.map */
