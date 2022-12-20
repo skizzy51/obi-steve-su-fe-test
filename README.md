@@ -10,3 +10,5 @@ Other dependencies used are redux toolkit, font awesome and react google charts
 
 ## Vercel Link
 
+
+I couldn't finish with the media queries and some other aspects of the app because of time.
